@@ -12,3 +12,7 @@ A console App with functionalities like playing audios, creating playlists etc.
   <li><b>Play the play list:</b> Play all audio files from start to end present in play list created by user.</li>
 </ul>
 <p><em>Note:</em> An instance of Audio player can ONLY hold 5 play lists. Each playlist can be identified from its name and its directory. A playlist can ONLY hold songs from same directory.</p>
+
+<h2>External Resources</h2>
+<p><b>dirent.h</b> is a header file that is found only on Linux systems. It provides data structures and function calls to open and read the contents of directories. If you are trying to port Linux code that uses this header file to Windows, you will that it is not available with Visual Studio.</p>
+<p>There is a Windows implementation of **dirent.h** which can be downloaded <a href="https://github.com/tronkko/dirent">here</a> on Github. Just download the zip file, find the **dirent.h** header file and place it in your Visual Studio include directory. </p>
